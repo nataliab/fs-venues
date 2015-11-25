@@ -12,8 +12,8 @@
 		4A30C5731BFA556E009642B2 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30C5721BFA556E009642B2 /* VenueTableViewCell.swift */; };
 		4A30C5751BFB4ED9009642B2 /* VenueTableHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30C5741BFB4ED9009642B2 /* VenueTableHeaderViewCell.swift */; };
 		4A35BF171BFA09A20089DAE5 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35BF161BFA09A20089DAE5 /* APIConstants.swift */; };
-		4A5734651C05E824007A1885 /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5734631C05E824007A1885 /* screen1.png */; };
-		4A5734661C05E824007A1885 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5734641C05E824007A1885 /* screen2.png */; };
+		4A57346B1C05E92B007A1885 /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5734691C05E92B007A1885 /* screen1.png */; };
+		4A57346C1C05E92B007A1885 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A57346A1C05E92B007A1885 /* screen2.png */; };
 		4A9400C81C04B5A600BADA70 /* HTTPUtlis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9400C71C04B5A600BADA70 /* HTTPUtlis.swift */; };
 		4A9400CA1C04C28D00BADA70 /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4A9400C91C04C28D00BADA70 /* default.gpx */; };
 		4AB85D141BFD1B12005C8C9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB85D131BFD1B12005C8C9A /* CoreLocation.framework */; };
@@ -49,8 +49,8 @@
 		4A30C5721BFA556E009642B2 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueTableViewCell.swift; path = ../VenueTableViewCell.swift; sourceTree = "<group>"; };
 		4A30C5741BFB4ED9009642B2 /* VenueTableHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueTableHeaderViewCell.swift; path = ../VenueTableHeaderViewCell.swift; sourceTree = "<group>"; };
 		4A35BF161BFA09A20089DAE5 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = ../APIConstants.swift; sourceTree = "<group>"; };
-		4A5734631C05E824007A1885 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
-		4A5734641C05E824007A1885 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
+		4A5734691C05E92B007A1885 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
+		4A57346A1C05E92B007A1885 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
 		4A9400C71C04B5A600BADA70 /* HTTPUtlis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUtlis.swift; sourceTree = "<group>"; };
 		4A9400C91C04C28D00BADA70 /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
 		4AB85D131BFD1B12005C8C9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -97,8 +97,8 @@
 		4AB9EFE51BF637D1008B616C = {
 			isa = PBXGroup;
 			children = (
-				4A5734631C05E824007A1885 /* screen1.png */,
-				4A5734641C05E824007A1885 /* screen2.png */,
+				4A5734691C05E92B007A1885 /* screen1.png */,
+				4A57346A1C05E92B007A1885 /* screen2.png */,
 				4AD1120A1C05E28800C90D63 /* README.md */,
 				4A9400C91C04C28D00BADA70 /* default.gpx */,
 				4AB9EFF01BF637D1008B616C /* FSVenues */,
@@ -249,9 +249,9 @@
 			files = (
 				4AB9EFFC1BF637D1008B616C /* LaunchScreen.storyboard in Resources */,
 				4AB9EFF91BF637D1008B616C /* Assets.xcassets in Resources */,
-				4A5734661C05E824007A1885 /* screen2.png in Resources */,
+				4A57346C1C05E92B007A1885 /* screen2.png in Resources */,
 				4A9400CA1C04C28D00BADA70 /* default.gpx in Resources */,
-				4A5734651C05E824007A1885 /* screen1.png in Resources */,
+				4A57346B1C05E92B007A1885 /* screen1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
