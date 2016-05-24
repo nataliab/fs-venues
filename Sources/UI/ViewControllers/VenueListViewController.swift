@@ -12,7 +12,7 @@ import PromiseKit
 
 class VenueListViewController: UITableViewController, UITextFieldDelegate {
     
-    var venues = [Venue]()
+    var venues = ["venue1", "venue2"]
     var what: String = "beer"
     var near: String = ""
     let cellIdentifier = "venueCell"
@@ -47,7 +47,7 @@ class VenueListViewController: UITableViewController, UITextFieldDelegate {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! VenueTableViewCell
-        cell.venue = venues[indexPath.row]
+        cell.textLabel?.text = venues[indexPath.row]
         return cell
     }
     
@@ -110,45 +110,8 @@ class VenueListViewController: UITableViewController, UITextFieldDelegate {
     
     func search(what: String, near: String){
         showProgressIndicator(activityIndicator)
-        
-        searchForVenues(what, near: near).then { [weak self] (venues) -> () in
-            let detailsPromises = venues.map {
-                (self?.getVenueDetails($0.id))!
-            }
-            when(detailsPromises).then { [weak self] (venues)  -> () in
-                self?.venues = venues
-                dispatch_async(dispatch_get_main_queue(), {
-                    self?.tableView.reloadData()
-                })
-                }.always { [weak self]  in
-                    self?.hideProgressIndicator(self?.activityIndicator)
-                }.error { [weak self] (error) in
-                    self?.displayError("Failed to get venue detials: \(error)")
-            }
-            }.error { [weak self] (error) in
-                self?.displayError("Failed to search for venues: \(error)")
-                self?.hideProgressIndicator(self?.activityIndicator)
-        }
-    }
-    
-    func searchForVenues(what: String, near: String) -> Promise<[Venue]> {
-        do {
-            return try VenueGetVenuesExplore(clientId : FourSquareAPIConstants.CLIENT_ID, clientSecret : FourSquareAPIConstants.CLIENT_SECRET, v : FourSquareAPIConstants.VERSION_DATE, near : near, query : what).promise().then { response -> [Venue] in
-                response.response.groups.flatMap{$0.items.flatMap{$0.venue}}
-            }
-        } catch (let err) {
-            return Promise(error: err)
-        }
-    }
-    
-    func getVenueDetails(venueId: String) -> Promise<Venue> {
-        do {
-            return try VenueGetVenuesByVenueId(venueId: venueId, clientId: FourSquareAPIConstants.CLIENT_ID, clientSecret: FourSquareAPIConstants.CLIENT_SECRET, v: FourSquareAPIConstants.VERSION_DATE).promise().then { response -> Venue in
-                response.response.venue
-            }
-        } catch (let err) {
-            return Promise(error: err)
-        }
+        //TODO implement me!
+        hideProgressIndicator(activityIndicator)
     }
     
 }

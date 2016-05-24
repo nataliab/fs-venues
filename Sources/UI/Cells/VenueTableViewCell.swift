@@ -10,16 +10,7 @@ import UIKit
 
 class VenueTableViewCell: UITableViewCell {
     
-    let placeholderImage = VenueTableViewCell.createPlaceholderImage()
-    
-    var venue: Venue? {
-        didSet {
-            textLabel?.text = venue!.name
-            if let photo = venue!.bestPhoto where photo.width > 0 {
-                getDataFromUrl(NSURL(string: "\(photo._prefix)\(photo.width)\(photo.suffix)"), completion: displayPhoto)
-            }
-        }
-    }
+    let placeholderImage = createPlaceholderImage(CGRectMake(0.0, 0.0, 80, 80))
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -40,17 +31,6 @@ class VenueTableViewCell: UITableViewCell {
         self.imageView?.image = placeholderImage
         textLabel?.text = ""
         layoutSubviews()
-    }
-    
-    private static func createPlaceholderImage() -> UIImage {
-        let rect = CGRectMake(0.0, 0.0, 80, 80)
-        UIGraphicsBeginImageContext(rect.size)
-        let context = UIGraphicsGetCurrentContext()
-        CGContextSetFillColorWithColor(context, UIColor.groupTableViewBackgroundColor().CGColor)
-        CGContextFillRect(context, rect)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext();
-        return image
     }
     
 }
