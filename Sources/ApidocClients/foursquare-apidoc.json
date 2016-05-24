@@ -1,0 +1,225 @@
+{
+  "apidoc": {
+    "version": "0.11.21"
+  },
+  "name": "foursquare",
+  "base_url": "https://api.foursquare.com/v2",
+  "description": "Foursquare API",
+  "info": {
+    "contact": {
+      "name": "Natalia",
+      "email": "nbartol@gilt.com"
+    }
+  },
+  "models": {
+    "venue_explore_response_wrapper": {
+      "description": "Explore venue response wrapper",
+      "fields": [
+        {
+          "name": "response",
+          "type": "venue_explore_response",
+          "description": "Response content",
+          "required": true
+        }
+      ]
+    },
+    "venue_explore_response": {
+      "description": "Explore venue response",
+      "fields": [
+        {
+          "name": "groups",
+          "type": "[venue_group]",
+          "description": "List of venue groups i.e. Recommended Places",
+          "required": true
+        }
+      ]
+    },
+    "venue_group": {
+      "description": "Venue group",
+      "fields": [
+        {
+          "name": "items",
+          "type": "[venue_item]",
+          "description": "Venue item",
+          "required": true
+        }
+      ]
+    },
+    "venue_item": {
+      "description": "Venue item",
+      "fields": [
+        {
+          "name": "venue",
+          "type": "venue",
+          "description": "Venue",
+          "required": true
+        }
+      ]
+    },
+    "venue": {
+      "description": "Venue",
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "description": "Name",
+          "required": true,
+          "example": "The Beerhouse"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Id",
+          "required": true,
+          "example": "51b2504c498e537d84ee84c3"
+        },
+        {
+          "name": "bestPhoto",
+          "type": "photo",
+          "description": "Best photo of venue",
+          "required": false
+        }
+      ]
+    },
+    "photo": {
+      "description": "Photo of venues",
+      "fields": [
+        {
+          "name": "prefix",
+          "type": "string",
+          "required": true,
+          "example": "https://irs2.4sqi.net/img/general/"
+        },
+        {
+          "name": "suffix",
+          "type": "string",
+          "required": true,
+          "example": "/5293444_GBJkT8dTt_lCCu2qbwK5vm6uX64LWoDUzvMh6tG3kxY"
+        },
+        {
+          "name": "width",
+          "type": "integer",
+          "required": true,
+          "example": "640"
+        },
+        {
+          "name": "height",
+          "type": "integer",
+          "required": true,
+          "example": "640"
+        }
+      ]
+    },
+    "venue_details_response_wrapper": {
+      "description": "Venue details response wrapper",
+      "fields": [
+        {
+          "name": "response",
+          "type": "venue_details_response",
+          "required": true
+        }
+      ]
+    },
+    "venue_details_response": {
+      "description": "Venue details response",
+      "fields": [
+        {
+          "name": "venue",
+          "type": "venue",
+          "required": true
+        }
+      ]
+    }
+  },
+  "resources": {
+    "venue": {
+      "path": "/venues",
+      "operations": [
+        {
+          "method": "GET",
+          "path": "/explore",
+          "description": "Fetches venues nearby for a given query",
+          "parameters": [
+            {
+              "name": "client_id",
+              "type": "string",
+              "location": "query",
+              "required": true
+            },
+            {
+              "name": "client_secret",
+              "type": "string",
+              "location": "query",
+              "required": true
+            },
+            {
+              "name": "v",
+              "type": "string",
+              "location": "query",
+              "required": true,
+              "description": "Version parameter"
+            },
+            {
+              "name": "near",
+              "type": "string",
+              "location": "query",
+              "required": true,
+              "description": "Search near this location"
+            },
+            {
+              "name": "query",
+              "location": "query",
+              "type": "string",
+              "required": true,
+              "description": "What to search for"
+            }
+          ],
+          "responses": {
+            "200": {
+              "type": "venue_explore_response_wrapper",
+              "description": "List of venues"
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/:venue_id",
+          "description": "Venue details",
+          "parameters": [
+            {
+              "name": "venue_id",
+              "type": "string",
+              "location": "path",
+              "required": true
+            },
+            {
+              "name": "client_id",
+              "type": "string",
+              "location": "query",
+              "required": true
+            },
+            {
+              "name": "client_secret",
+              "type": "string",
+              "location": "query",
+              "required": true
+            },
+            {
+              "name": "v",
+              "type": "string",
+              "location": "query",
+              "required": true,
+              "description": "Version parameter"
+            }
+          ],
+          "responses": {
+            "200": {
+              "type": "venue_details_response_wrapper",
+              "description": "Venue detials"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

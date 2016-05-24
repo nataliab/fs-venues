@@ -10,13 +10,12 @@ import UIKit
 
 class VenueDetailsViewController: UIViewController {
     
-    let venueId: String
     var activityIndicator: UIActivityIndicatorView!
-    var venue: Venue?
+    let venue: Venue
     
-    init(venueId: String)
+    init(venue: Venue)
     {
-        self.venueId = venueId
+        self.venue = venue
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -27,30 +26,10 @@ class VenueDetailsViewController: UIViewController {
         activityIndicator = createProgressIndicator()
         let leftButton =  UIBarButtonItem(title: "Back", style:   UIBarButtonItemStyle.Plain, target: self, action: #selector(VenueDetailsViewController.back(_:)))
         navigationItem.setLeftBarButtonItem(leftButton, animated: false)
-        loadVenueDetails()
-    }
-    
-    func loadVenueDetails() {
-        do {
+        title = venue.name
+        if let photo = venue.bestPhoto where photo.width > 0 {
             showProgressIndicator(activityIndicator)
-            let venueDetailsTransaction = try VenueGetVenuesByVenueId(venueId: venueId, clientId: FourSquareAPIConstants.CLIENT_ID, clientSecret: FourSquareAPIConstants.CLIENT_SECRET, v: FourSquareAPIConstants.VERSION_DATE)
-            
-            venueDetailsTransaction.executeTransaction() { result in
-                switch result {
-                case .Succeeded(let response, _):
-                    let v = response.response.venue
-                    self.venue = v
-                    self.title = v.name
-                    if let photo = v.bestPhoto where photo.width > 0 {
-                        self.getDataFromUrl(NSURL(string: "\(photo._prefix)\(photo.width)\(photo.suffix)"), completion: self.displayPhoto)
-                    }
-                case .Failed(let err):
-                    self.displayError("Failed to load venue details: \(err)")
-                }
-            }
-        } catch (let err) {
-             hideProgressIndicator(activityIndicator)
-             displayError("Failed to load venue details: \(err)")
+            getDataFromUrl(NSURL(string: "\(photo._prefix)\(photo.width)\(photo.suffix)"), completion: displayPhoto)
         }
     }
     
@@ -65,13 +44,6 @@ class VenueDetailsViewController: UIViewController {
             self.view.addSubview(imageView)
             self.hideProgressIndicator(self.activityIndicator)
         }
-    }
-    
-    func getDataFromUrl(url: NSURL?, completion: ((data: NSData?) -> Void)) {
-        guard let url = url else { return }
-        NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
-            completion(data: data)
-            }.resume()
     }
     
     func back(sender: UIButton){
