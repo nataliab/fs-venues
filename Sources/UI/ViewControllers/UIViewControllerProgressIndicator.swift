@@ -23,9 +23,9 @@ extension UIViewController {
         })
     }
     
-    func hideProgressIndicator(indicator: UIActivityIndicatorView) {
+    func hideProgressIndicator(indicator: UIActivityIndicatorView?) {
         dispatch_async(dispatch_get_main_queue(), {
-           indicator.removeFromSuperview()
+           indicator?.removeFromSuperview()
         })
     }
     

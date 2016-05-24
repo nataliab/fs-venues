@@ -10,17 +10,37 @@ import UIKit
 
 class VenueTableViewCell: UITableViewCell {
     
-    let name: UILabel
+    let placeholderImage = createPlaceholderImage(CGRectMake(0.0, 0.0, 80, 80))
+    
+    var venue: Venue? {
+        didSet {
+            textLabel?.text = venue!.name
+            if let photo = venue!.bestPhoto where photo.width > 0 {
+                getDataFromUrl(NSURL(string: "\(photo._prefix)\(photo.width)\(photo.suffix)"), completion: displayPhoto)
+            }
+        }
+    }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        name = UILabel()
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.addSubview(name)
-        name.translatesAutoresizingMaskIntoConstraints = false
-        name.leadingAnchor.constraintEqualToAnchor(self.contentView.leadingAnchor, constant: 10.0).active = true
-        name.centerYAnchor.constraintEqualToAnchor(self.contentView.centerYAnchor).active = true
+        imageView?.image = placeholderImage
     }
     
     required init(coder aDecoder: NSCoder) { fatalError() }
     
+    private func displayPhoto(data: NSData?) -> Void {
+        guard let d = data else { return }
+        dispatch_async(dispatch_get_main_queue()) {
+            self.imageView?.image = UIImage(data: d)
+            self.layoutSubviews()
+        }
+    }
+    
+    override func prepareForReuse() {
+        self.imageView?.image = placeholderImage
+        textLabel?.text = ""
+        layoutSubviews()
+    }
+    
 }
+
