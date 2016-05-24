@@ -7,30 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A30C51B1BFA17B8009642B2 /* VenueListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30C51A1BFA17B8009642B2 /* VenueListResponse.swift */; };
-		4A30C5211BFA1902009642B2 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30C5201BFA1902009642B2 /* Venue.swift */; };
-		4A30C5731BFA556E009642B2 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30C5721BFA556E009642B2 /* VenueTableViewCell.swift */; };
-		4A30C5751BFB4ED9009642B2 /* VenueTableHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A30C5741BFB4ED9009642B2 /* VenueTableHeaderViewCell.swift */; };
-		4A35BF171BFA09A20089DAE5 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35BF161BFA09A20089DAE5 /* APIConstants.swift */; };
-		4A57346B1C05E92B007A1885 /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A5734691C05E92B007A1885 /* screen1.png */; };
-		4A57346C1C05E92B007A1885 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A57346A1C05E92B007A1885 /* screen2.png */; };
-		4A9400C81C04B5A600BADA70 /* HTTPUtlis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9400C71C04B5A600BADA70 /* HTTPUtlis.swift */; };
-		4A9400CA1C04C28D00BADA70 /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4A9400C91C04C28D00BADA70 /* default.gpx */; };
-		4AB85D141BFD1B12005C8C9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB85D131BFD1B12005C8C9A /* CoreLocation.framework */; };
-		4AB85D181BFDEE3C005C8C9A /* FourSquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB85D171BFDEE3C005C8C9A /* FourSquareApi.swift */; };
-		4AB85D1C1BFE2F0E005C8C9A /* VenueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB85D1B1BFE2F0E005C8C9A /* VenueDetailsViewController.swift */; };
-		4AB85D1E1BFE4B20005C8C9A /* VenueDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB85D1D1BFE4B20005C8C9A /* VenueDetailsResponse.swift */; };
-		4AB85D201BFE4CBE005C8C9A /* FourSquarePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB85D1F1BFE4CBE005C8C9A /* FourSquarePhoto.swift */; };
-		4AB85D221BFF40C0005C8C9A /* UIViewControllerProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB85D211BFF40C0005C8C9A /* UIViewControllerProgressIndicator.swift */; };
-		4AB85D281BFF6025005C8C9A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB85D271BFF6025005C8C9A /* MapKit.framework */; };
-		4AB85D2A1BFF715F005C8C9A /* VenueListViewControllerCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB85D291BFF715F005C8C9A /* VenueListViewControllerCLLocationManagerDelegate.swift */; };
-		4AB85D301C048A22005C8C9A /* UIViewControllerJSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB85D2F1C048A22005C8C9A /* UIViewControllerJSONUtils.swift */; };
-		4AB9EFF21BF637D1008B616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9EFF11BF637D1008B616C /* AppDelegate.swift */; };
-		4AB9EFF41BF637D1008B616C /* VenueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9EFF31BF637D1008B616C /* VenueListViewController.swift */; };
-		4AB9EFF91BF637D1008B616C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB9EFF81BF637D1008B616C /* Assets.xcassets */; };
-		4AB9EFFC1BF637D1008B616C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB9EFFA1BF637D1008B616C /* LaunchScreen.storyboard */; };
-		4AB9F0071BF637D1008B616C /* FSVenuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9F0061BF637D1008B616C /* FSVenuesTests.swift */; };
-		4AD1120B1C05E28800C90D63 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4AD1120A1C05E28800C90D63 /* README.md */; };
+		4A25CB9D1CF3A61300F02CF8 /* CleanroomConcurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4E71CF3A59B00F02CF8 /* CleanroomConcurrency.framework */; };
+		4A25CB9E1CF3A61300F02CF8 /* CleanroomConcurrency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4E71CF3A59B00F02CF8 /* CleanroomConcurrency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A25CB9F1CF3A61300F02CF8 /* CleanroomDataTransactions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4E91CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */; };
+		4A25CBA01CF3A61300F02CF8 /* CleanroomDataTransactions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4E91CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A25CBA11CF3A61300F02CF8 /* CleanroomDateTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4EB1CF3A59B00F02CF8 /* CleanroomDateTime.framework */; };
+		4A25CBA21CF3A61300F02CF8 /* CleanroomDateTime.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4EB1CF3A59B00F02CF8 /* CleanroomDateTime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A25CBA31CF3A61300F02CF8 /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4EE1CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */; };
+		4A25CBA41CF3A61300F02CF8 /* OMGHTTPURLRQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4EE1CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A25CBA51CF3A61300F02CF8 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4F01CF3A59B00F02CF8 /* PromiseKit.framework */; };
+		4A25CBA61CF3A61300F02CF8 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A25C4F01CF3A59B00F02CF8 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A3C14CA1CF393FE002DA677 /* FSVenuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14C61CF393C5002DA677 /* FSVenuesTests.swift */; };
+		4A3C14CB1CF393FE002DA677 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14C71CF393C5002DA677 /* Info.plist */; };
+		4A3C14F31CF39522002DA677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14D51CF39522002DA677 /* AppDelegate.swift */; };
+		4A3C14F41CF39522002DA677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3C14D61CF39522002DA677 /* Assets.xcassets */; };
+		4A3C14F51CF39522002DA677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3C14D71CF39522002DA677 /* LaunchScreen.storyboard */; };
+		4A3C14FE1CF39522002DA677 /* VenueTableHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14E71CF39522002DA677 /* VenueTableHeaderViewCell.swift */; };
+		4A3C14FF1CF39522002DA677 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14E81CF39522002DA677 /* VenueTableViewCell.swift */; };
+		4A3C15011CF39522002DA677 /* UIViewControllerProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14EB1CF39522002DA677 /* UIViewControllerProgressIndicator.swift */; };
+		4A3C15021CF39522002DA677 /* VenueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14EC1CF39522002DA677 /* VenueDetailsViewController.swift */; };
+		4A3C15031CF39522002DA677 /* VenueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14ED1CF39522002DA677 /* VenueListViewController.swift */; };
+		4A3C15041CF39522002DA677 /* VenueListViewControllerCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C14EE1CF39522002DA677 /* VenueListViewControllerCLLocationManagerDelegate.swift */; };
+		4AAD7F0D1CF3B41300B8DA65 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAD7F0C1CF3B41300B8DA65 /* CoreLocation.framework */; };
+		4AAD7F2F1CF4562F00B8DA65 /* Foursquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F231CF4562F00B8DA65 /* Foursquare.swift */; };
+		4AAD7F301CF4562F00B8DA65 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F241CF4562F00B8DA65 /* Photo.swift */; };
+		4AAD7F311CF4562F00B8DA65 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F251CF4562F00B8DA65 /* Venue.swift */; };
+		4AAD7F321CF4562F00B8DA65 /* VenueDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F261CF4562F00B8DA65 /* VenueDetailsResponse.swift */; };
+		4AAD7F331CF4562F00B8DA65 /* VenueDetailsResponseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F271CF4562F00B8DA65 /* VenueDetailsResponseWrapper.swift */; };
+		4AAD7F341CF4562F00B8DA65 /* VenueExploreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F281CF4562F00B8DA65 /* VenueExploreResponse.swift */; };
+		4AAD7F351CF4562F00B8DA65 /* VenueExploreResponseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F291CF4562F00B8DA65 /* VenueExploreResponseWrapper.swift */; };
+		4AAD7F361CF4562F00B8DA65 /* VenueGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F2A1CF4562F00B8DA65 /* VenueGroup.swift */; };
+		4AAD7F371CF4562F00B8DA65 /* VenueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F2B1CF4562F00B8DA65 /* VenueItem.swift */; };
+		4AAD7F381CF4562F00B8DA65 /* VenueGetVenuesByVenueId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F2D1CF4562F00B8DA65 /* VenueGetVenuesByVenueId.swift */; };
+		4AAD7F391CF4562F00B8DA65 /* VenueGetVenuesExplore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F2E1CF4562F00B8DA65 /* VenueGetVenuesExplore.swift */; };
+		4AAD7F3D1CF45F8600B8DA65 /* FourSquareAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F3C1CF45F8600B8DA65 /* FourSquareAPIConstants.swift */; };
+		4AAD7F3F1CF4793900B8DA65 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD7F3E1CF4793900B8DA65 /* Info.plist */; };
+		4AAD7F411CF47A5800B8DA65 /* default 13.00.58.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD7F401CF47A5800B8DA65 /* default 13.00.58.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,35 +55,78 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4A25CBA71CF3A61300F02CF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A25CBA01CF3A61300F02CF8 /* CleanroomDataTransactions.framework in Embed Frameworks */,
+				4A25CBA21CF3A61300F02CF8 /* CleanroomDateTime.framework in Embed Frameworks */,
+				4A25CBA61CF3A61300F02CF8 /* PromiseKit.framework in Embed Frameworks */,
+				4A25CB9E1CF3A61300F02CF8 /* CleanroomConcurrency.framework in Embed Frameworks */,
+				4A25CBA41CF3A61300F02CF8 /* OMGHTTPURLRQ.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4A30C51A1BFA17B8009642B2 /* VenueListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueListResponse.swift; path = ../VenueListResponse.swift; sourceTree = "<group>"; };
-		4A30C5201BFA1902009642B2 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = ../Venue.swift; sourceTree = "<group>"; };
-		4A30C5721BFA556E009642B2 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueTableViewCell.swift; path = ../VenueTableViewCell.swift; sourceTree = "<group>"; };
-		4A30C5741BFB4ED9009642B2 /* VenueTableHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueTableHeaderViewCell.swift; path = ../VenueTableHeaderViewCell.swift; sourceTree = "<group>"; };
-		4A35BF161BFA09A20089DAE5 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIConstants.swift; path = ../APIConstants.swift; sourceTree = "<group>"; };
-		4A5734691C05E92B007A1885 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
-		4A57346A1C05E92B007A1885 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
-		4A9400C71C04B5A600BADA70 /* HTTPUtlis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUtlis.swift; sourceTree = "<group>"; };
-		4A9400C91C04C28D00BADA70 /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
-		4AB85D131BFD1B12005C8C9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		4AB85D171BFDEE3C005C8C9A /* FourSquareApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourSquareApi.swift; sourceTree = "<group>"; };
-		4AB85D1B1BFE2F0E005C8C9A /* VenueDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailsViewController.swift; sourceTree = "<group>"; };
-		4AB85D1D1BFE4B20005C8C9A /* VenueDetailsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueDetailsResponse.swift; path = ../VenueDetailsResponse.swift; sourceTree = "<group>"; };
-		4AB85D1F1BFE4CBE005C8C9A /* FourSquarePhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourSquarePhoto.swift; sourceTree = "<group>"; };
-		4AB85D211BFF40C0005C8C9A /* UIViewControllerProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerProgressIndicator.swift; sourceTree = "<group>"; };
-		4AB85D271BFF6025005C8C9A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		4AB85D291BFF715F005C8C9A /* VenueListViewControllerCLLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueListViewControllerCLLocationManagerDelegate.swift; sourceTree = "<group>"; };
-		4AB85D2F1C048A22005C8C9A /* UIViewControllerJSONUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerJSONUtils.swift; sourceTree = "<group>"; };
+		4A1458851CF3779F00694BBF /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		4A25C4E71CF3A59B00F02CF8 /* CleanroomConcurrency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomConcurrency.framework; sourceTree = "<group>"; };
+		4A25C4E91CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomDataTransactions.framework; sourceTree = "<group>"; };
+		4A25C4EB1CF3A59B00F02CF8 /* CleanroomDateTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomDateTime.framework; sourceTree = "<group>"; };
+		4A25C4EE1CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMGHTTPURLRQ.framework; sourceTree = "<group>"; };
+		4A25C4F01CF3A59B00F02CF8 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
+		4A25C4F31CF3A59B00F02CF8 /* CleanroomConcurrency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomConcurrency.framework; sourceTree = "<group>"; };
+		4A25C4F51CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomDataTransactions.framework; sourceTree = "<group>"; };
+		4A25C4F71CF3A59B00F02CF8 /* CleanroomDateTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomDateTime.framework; sourceTree = "<group>"; };
+		4A25C4F91CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMGHTTPURLRQ.framework; sourceTree = "<group>"; };
+		4A25C4FB1CF3A59B00F02CF8 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
+		4A25C5021CF3A59B00F02CF8 /* CleanroomConcurrency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomConcurrency.framework; sourceTree = "<group>"; };
+		4A25C5041CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomDataTransactions.framework; sourceTree = "<group>"; };
+		4A25C5061CF3A59B00F02CF8 /* CleanroomDateTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomDateTime.framework; sourceTree = "<group>"; };
+		4A25C5091CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMGHTTPURLRQ.framework; sourceTree = "<group>"; };
+		4A25C50B1CF3A59B00F02CF8 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
+		4A25C5121CF3A59B00F02CF8 /* CleanroomConcurrency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomConcurrency.framework; sourceTree = "<group>"; };
+		4A25C5141CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomDataTransactions.framework; sourceTree = "<group>"; };
+		4A25C5161CF3A59B00F02CF8 /* CleanroomDateTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleanroomDateTime.framework; sourceTree = "<group>"; };
+		4A25C5191CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMGHTTPURLRQ.framework; sourceTree = "<group>"; };
+		4A25C51B1CF3A59B00F02CF8 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = "<group>"; };
+		4A3C0E221CF390D9002DA677 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		4A3C14C61CF393C5002DA677 /* FSVenuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSVenuesTests.swift; sourceTree = "<group>"; };
+		4A3C14C71CF393C5002DA677 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A3C14D51CF39522002DA677 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A3C14D61CF39522002DA677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Sources/Assets.xcassets; sourceTree = "<group>"; };
+		4A3C14D81CF39522002DA677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A3C14E71CF39522002DA677 /* VenueTableHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueTableHeaderViewCell.swift; sourceTree = "<group>"; };
+		4A3C14E81CF39522002DA677 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		4A3C14EB1CF39522002DA677 /* UIViewControllerProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerProgressIndicator.swift; sourceTree = "<group>"; };
+		4A3C14EC1CF39522002DA677 /* VenueDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailsViewController.swift; sourceTree = "<group>"; };
+		4A3C14ED1CF39522002DA677 /* VenueListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueListViewController.swift; sourceTree = "<group>"; };
+		4A3C14EE1CF39522002DA677 /* VenueListViewControllerCLLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueListViewControllerCLLocationManagerDelegate.swift; sourceTree = "<group>"; };
+		4AAD7F0C1CF3B41300B8DA65 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4AAD7F231CF4562F00B8DA65 /* Foursquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foursquare.swift; sourceTree = "<group>"; };
+		4AAD7F241CF4562F00B8DA65 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		4AAD7F251CF4562F00B8DA65 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		4AAD7F261CF4562F00B8DA65 /* VenueDetailsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailsResponse.swift; sourceTree = "<group>"; };
+		4AAD7F271CF4562F00B8DA65 /* VenueDetailsResponseWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailsResponseWrapper.swift; sourceTree = "<group>"; };
+		4AAD7F281CF4562F00B8DA65 /* VenueExploreResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueExploreResponse.swift; sourceTree = "<group>"; };
+		4AAD7F291CF4562F00B8DA65 /* VenueExploreResponseWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueExploreResponseWrapper.swift; sourceTree = "<group>"; };
+		4AAD7F2A1CF4562F00B8DA65 /* VenueGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueGroup.swift; sourceTree = "<group>"; };
+		4AAD7F2B1CF4562F00B8DA65 /* VenueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueItem.swift; sourceTree = "<group>"; };
+		4AAD7F2D1CF4562F00B8DA65 /* VenueGetVenuesByVenueId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueGetVenuesByVenueId.swift; sourceTree = "<group>"; };
+		4AAD7F2E1CF4562F00B8DA65 /* VenueGetVenuesExplore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueGetVenuesExplore.swift; sourceTree = "<group>"; };
+		4AAD7F3C1CF45F8600B8DA65 /* FourSquareAPIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourSquareAPIConstants.swift; sourceTree = "<group>"; };
+		4AAD7F3E1CF4793900B8DA65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AAD7F401CF47A5800B8DA65 /* default 13.00.58.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default 13.00.58.gpx"; sourceTree = "<group>"; };
 		4AB9EFEE1BF637D1008B616C /* FSVenues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSVenues.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AB9EFF11BF637D1008B616C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AB9EFF31BF637D1008B616C /* VenueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListViewController.swift; sourceTree = "<group>"; };
-		4AB9EFF81BF637D1008B616C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4AB9EFFB1BF637D1008B616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4AB9EFFD1BF637D1008B616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB9F0021BF637D1008B616C /* FSVenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSVenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AB9F0061BF637D1008B616C /* FSVenuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSVenuesTests.swift; sourceTree = "<group>"; };
-		4AB9F0081BF637D1008B616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AD1120A1C05E28800C90D63 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4AFA6A7A1CF37F5A003FD5AE /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
+		4AFA6A7B1CF37F5A003FD5AE /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +134,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB85D141BFD1B12005C8C9A /* CoreLocation.framework in Frameworks */,
-				4AB85D281BFF6025005C8C9A /* MapKit.framework in Frameworks */,
+				4AAD7F0D1CF3B41300B8DA65 /* CoreLocation.framework in Frameworks */,
+				4A25CB9F1CF3A61300F02CF8 /* CleanroomDataTransactions.framework in Frameworks */,
+				4A25CBA11CF3A61300F02CF8 /* CleanroomDateTime.framework in Frameworks */,
+				4A25CBA51CF3A61300F02CF8 /* PromiseKit.framework in Frameworks */,
+				4A25CB9D1CF3A61300F02CF8 /* CleanroomConcurrency.framework in Frameworks */,
+				4A25CBA31CF3A61300F02CF8 /* OMGHTTPURLRQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,17 +153,185 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A25C4DB1CF3A59B00F02CF8 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				4A25C4DC1CF3A59B00F02CF8 /* Build */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		4A25C4DC1CF3A59B00F02CF8 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				4A25C4DD1CF3A59B00F02CF8 /* iOS */,
+				4A25C4F21CF3A59B00F02CF8 /* Mac */,
+				4A25C4FD1CF3A59B00F02CF8 /* tvOS */,
+				4A25C50D1CF3A59B00F02CF8 /* watchOS */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		4A25C4DD1CF3A59B00F02CF8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4A25C4E71CF3A59B00F02CF8 /* CleanroomConcurrency.framework */,
+				4A25C4E91CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */,
+				4A25C4EB1CF3A59B00F02CF8 /* CleanroomDateTime.framework */,
+				4A25C4EE1CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */,
+				4A25C4F01CF3A59B00F02CF8 /* PromiseKit.framework */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		4A25C4F21CF3A59B00F02CF8 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				4A25C4F31CF3A59B00F02CF8 /* CleanroomConcurrency.framework */,
+				4A25C4F51CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */,
+				4A25C4F71CF3A59B00F02CF8 /* CleanroomDateTime.framework */,
+				4A25C4F91CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */,
+				4A25C4FB1CF3A59B00F02CF8 /* PromiseKit.framework */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		4A25C4FD1CF3A59B00F02CF8 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				4A25C5021CF3A59B00F02CF8 /* CleanroomConcurrency.framework */,
+				4A25C5041CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */,
+				4A25C5061CF3A59B00F02CF8 /* CleanroomDateTime.framework */,
+				4A25C5091CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */,
+				4A25C50B1CF3A59B00F02CF8 /* PromiseKit.framework */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		4A25C50D1CF3A59B00F02CF8 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				4A25C5121CF3A59B00F02CF8 /* CleanroomConcurrency.framework */,
+				4A25C5141CF3A59B00F02CF8 /* CleanroomDataTransactions.framework */,
+				4A25C5161CF3A59B00F02CF8 /* CleanroomDateTime.framework */,
+				4A25C5191CF3A59B00F02CF8 /* OMGHTTPURLRQ.framework */,
+				4A25C51B1CF3A59B00F02CF8 /* PromiseKit.framework */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		4A3C0E261CF391F3002DA677 /* BuildControl */ = {
+			isa = PBXGroup;
+			children = (
+				4AAD7F3E1CF4793900B8DA65 /* Info.plist */,
+			);
+			path = BuildControl;
+			sourceTree = "<group>";
+		};
+		4A3C14C51CF393C5002DA677 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4A3C14C61CF393C5002DA677 /* FSVenuesTests.swift */,
+				4A3C14C71CF393C5002DA677 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4A3C14CC1CF39522002DA677 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4A3C14CD1CF39522002DA677 /* ApidocClients */,
+				4A3C14E41CF39522002DA677 /* UI */,
+				4A3C14D51CF39522002DA677 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4A3C14CD1CF39522002DA677 /* ApidocClients */ = {
+			isa = PBXGroup;
+			children = (
+				4AAD7F3C1CF45F8600B8DA65 /* FourSquareAPIConstants.swift */,
+				4AAD7F211CF4562F00B8DA65 /* FourSquare */,
+			);
+			path = ApidocClients;
+			sourceTree = "<group>";
+		};
+		4A3C14E41CF39522002DA677 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4A3C14E61CF39522002DA677 /* Cells */,
+				4A3C14E91CF39522002DA677 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4A3C14E61CF39522002DA677 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A3C14E71CF39522002DA677 /* VenueTableHeaderViewCell.swift */,
+				4A3C14E81CF39522002DA677 /* VenueTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4A3C14E91CF39522002DA677 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A3C14EB1CF39522002DA677 /* UIViewControllerProgressIndicator.swift */,
+				4A3C14EC1CF39522002DA677 /* VenueDetailsViewController.swift */,
+				4A3C14ED1CF39522002DA677 /* VenueListViewController.swift */,
+				4A3C14EE1CF39522002DA677 /* VenueListViewControllerCLLocationManagerDelegate.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4AAD7F211CF4562F00B8DA65 /* FourSquare */ = {
+			isa = PBXGroup;
+			children = (
+				4AAD7F221CF4562F00B8DA65 /* Model */,
+				4AAD7F2C1CF4562F00B8DA65 /* Resource */,
+			);
+			path = FourSquare;
+			sourceTree = "<group>";
+		};
+		4AAD7F221CF4562F00B8DA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AAD7F231CF4562F00B8DA65 /* Foursquare.swift */,
+				4AAD7F241CF4562F00B8DA65 /* Photo.swift */,
+				4AAD7F251CF4562F00B8DA65 /* Venue.swift */,
+				4AAD7F261CF4562F00B8DA65 /* VenueDetailsResponse.swift */,
+				4AAD7F271CF4562F00B8DA65 /* VenueDetailsResponseWrapper.swift */,
+				4AAD7F281CF4562F00B8DA65 /* VenueExploreResponse.swift */,
+				4AAD7F291CF4562F00B8DA65 /* VenueExploreResponseWrapper.swift */,
+				4AAD7F2A1CF4562F00B8DA65 /* VenueGroup.swift */,
+				4AAD7F2B1CF4562F00B8DA65 /* VenueItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AAD7F2C1CF4562F00B8DA65 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4AAD7F2D1CF4562F00B8DA65 /* VenueGetVenuesByVenueId.swift */,
+				4AAD7F2E1CF4562F00B8DA65 /* VenueGetVenuesExplore.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		4AB9EFE51BF637D1008B616C = {
 			isa = PBXGroup;
 			children = (
-				4A5734691C05E92B007A1885 /* screen1.png */,
-				4A57346A1C05E92B007A1885 /* screen2.png */,
-				4AD1120A1C05E28800C90D63 /* README.md */,
-				4A9400C91C04C28D00BADA70 /* default.gpx */,
-				4AB9EFF01BF637D1008B616C /* FSVenues */,
-				4AB9F0051BF637D1008B616C /* FSVenuesTests */,
+				4AAD7F0C1CF3B41300B8DA65 /* CoreLocation.framework */,
+				4A3C14CC1CF39522002DA677 /* Sources */,
+				4A3C0E261CF391F3002DA677 /* BuildControl */,
 				4AB9EFEF1BF637D1008B616C /* Products */,
-				F7DCF3E6174CF5670B626948 /* Frameworks */,
+				4AFA6A781CF37F5A003FD5AE /* Resources */,
+				4A3C14C51CF393C5002DA677 /* Tests */,
+				4A25C4DB1CF3A59B00F02CF8 /* Carthage */,
+				4A1458851CF3779F00694BBF /* Cartfile */,
+				4A3C0E221CF390D9002DA677 /* Cartfile.resolved */,
+				4AD1120A1C05E28800C90D63 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,47 +344,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4AB9EFF01BF637D1008B616C /* FSVenues */ = {
+		4AFA6A781CF37F5A003FD5AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4A35BF161BFA09A20089DAE5 /* APIConstants.swift */,
-				4A30C51A1BFA17B8009642B2 /* VenueListResponse.swift */,
-				4AB85D1D1BFE4B20005C8C9A /* VenueDetailsResponse.swift */,
-				4A30C5201BFA1902009642B2 /* Venue.swift */,
-				4AB85D1F1BFE4CBE005C8C9A /* FourSquarePhoto.swift */,
-				4A30C5721BFA556E009642B2 /* VenueTableViewCell.swift */,
-				4A30C5741BFB4ED9009642B2 /* VenueTableHeaderViewCell.swift */,
-				4AB9EFF11BF637D1008B616C /* AppDelegate.swift */,
-				4AB85D2F1C048A22005C8C9A /* UIViewControllerJSONUtils.swift */,
-				4AB85D211BFF40C0005C8C9A /* UIViewControllerProgressIndicator.swift */,
-				4AB85D1B1BFE2F0E005C8C9A /* VenueDetailsViewController.swift */,
-				4AB9EFF31BF637D1008B616C /* VenueListViewController.swift */,
-				4AB85D291BFF715F005C8C9A /* VenueListViewControllerCLLocationManagerDelegate.swift */,
-				4AB9EFF81BF637D1008B616C /* Assets.xcassets */,
-				4AB9EFFA1BF637D1008B616C /* LaunchScreen.storyboard */,
-				4AB9EFFD1BF637D1008B616C /* Info.plist */,
-				4AB85D171BFDEE3C005C8C9A /* FourSquareApi.swift */,
-				4A9400C71C04B5A600BADA70 /* HTTPUtlis.swift */,
+				4AAD7F401CF47A5800B8DA65 /* default 13.00.58.gpx */,
+				4A3C14D61CF39522002DA677 /* Assets.xcassets */,
+				4A3C14D71CF39522002DA677 /* LaunchScreen.storyboard */,
+				4AFA6A7A1CF37F5A003FD5AE /* screen1.png */,
+				4AFA6A7B1CF37F5A003FD5AE /* screen2.png */,
 			);
-			path = FSVenues;
-			sourceTree = "<group>";
-		};
-		4AB9F0051BF637D1008B616C /* FSVenuesTests */ = {
-			isa = PBXGroup;
-			children = (
-				4AB9F0061BF637D1008B616C /* FSVenuesTests.swift */,
-				4AB9F0081BF637D1008B616C /* Info.plist */,
-			);
-			path = FSVenuesTests;
-			sourceTree = "<group>";
-		};
-		F7DCF3E6174CF5670B626948 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4AB85D271BFF6025005C8C9A /* MapKit.framework */,
-				4AB85D131BFD1B12005C8C9A /* CoreLocation.framework */,
-			);
-			name = Frameworks;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +366,7 @@
 				4AB9EFEA1BF637D1008B616C /* Sources */,
 				4AB9EFEB1BF637D1008B616C /* Frameworks */,
 				4AB9EFEC1BF637D1008B616C /* Resources */,
+				4A25CBA71CF3A61300F02CF8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,7 +401,7 @@
 		4AB9EFE61BF637D1008B616C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Natalia Bartol";
 				TargetAttributes = {
@@ -247,11 +444,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB9EFFC1BF637D1008B616C /* LaunchScreen.storyboard in Resources */,
-				4AB9EFF91BF637D1008B616C /* Assets.xcassets in Resources */,
-				4A57346C1C05E92B007A1885 /* screen2.png in Resources */,
-				4A9400CA1C04C28D00BADA70 /* default.gpx in Resources */,
-				4A57346B1C05E92B007A1885 /* screen1.png in Resources */,
+				4AAD7F3F1CF4793900B8DA65 /* Info.plist in Resources */,
+				4A3C14F41CF39522002DA677 /* Assets.xcassets in Resources */,
+				4A3C14F51CF39522002DA677 /* LaunchScreen.storyboard in Resources */,
+				4AAD7F411CF47A5800B8DA65 /* default 13.00.58.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,22 +465,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A30C51B1BFA17B8009642B2 /* VenueListResponse.swift in Sources */,
-				4A30C5731BFA556E009642B2 /* VenueTableViewCell.swift in Sources */,
-				4A30C5211BFA1902009642B2 /* Venue.swift in Sources */,
-				4AB85D201BFE4CBE005C8C9A /* FourSquarePhoto.swift in Sources */,
-				4AB9EFF41BF637D1008B616C /* VenueListViewController.swift in Sources */,
-				4A30C5751BFB4ED9009642B2 /* VenueTableHeaderViewCell.swift in Sources */,
-				4AD1120B1C05E28800C90D63 /* README.md in Sources */,
-				4AB9EFF21BF637D1008B616C /* AppDelegate.swift in Sources */,
-				4A9400C81C04B5A600BADA70 /* HTTPUtlis.swift in Sources */,
-				4AB85D1C1BFE2F0E005C8C9A /* VenueDetailsViewController.swift in Sources */,
-				4A35BF171BFA09A20089DAE5 /* APIConstants.swift in Sources */,
-				4AB85D181BFDEE3C005C8C9A /* FourSquareApi.swift in Sources */,
-				4AB85D2A1BFF715F005C8C9A /* VenueListViewControllerCLLocationManagerDelegate.swift in Sources */,
-				4AB85D1E1BFE4B20005C8C9A /* VenueDetailsResponse.swift in Sources */,
-				4AB85D301C048A22005C8C9A /* UIViewControllerJSONUtils.swift in Sources */,
-				4AB85D221BFF40C0005C8C9A /* UIViewControllerProgressIndicator.swift in Sources */,
+				4AAD7F301CF4562F00B8DA65 /* Photo.swift in Sources */,
+				4AAD7F351CF4562F00B8DA65 /* VenueExploreResponseWrapper.swift in Sources */,
+				4AAD7F3D1CF45F8600B8DA65 /* FourSquareAPIConstants.swift in Sources */,
+				4A3C15011CF39522002DA677 /* UIViewControllerProgressIndicator.swift in Sources */,
+				4AAD7F341CF4562F00B8DA65 /* VenueExploreResponse.swift in Sources */,
+				4A3C14FF1CF39522002DA677 /* VenueTableViewCell.swift in Sources */,
+				4AAD7F361CF4562F00B8DA65 /* VenueGroup.swift in Sources */,
+				4AAD7F321CF4562F00B8DA65 /* VenueDetailsResponse.swift in Sources */,
+				4A3C15021CF39522002DA677 /* VenueDetailsViewController.swift in Sources */,
+				4A3C14FE1CF39522002DA677 /* VenueTableHeaderViewCell.swift in Sources */,
+				4AAD7F2F1CF4562F00B8DA65 /* Foursquare.swift in Sources */,
+				4AAD7F311CF4562F00B8DA65 /* Venue.swift in Sources */,
+				4A3C14F31CF39522002DA677 /* AppDelegate.swift in Sources */,
+				4AAD7F391CF4562F00B8DA65 /* VenueGetVenuesExplore.swift in Sources */,
+				4AAD7F371CF4562F00B8DA65 /* VenueItem.swift in Sources */,
+				4A3C15031CF39522002DA677 /* VenueListViewController.swift in Sources */,
+				4A3C15041CF39522002DA677 /* VenueListViewControllerCLLocationManagerDelegate.swift in Sources */,
+				4AAD7F331CF4562F00B8DA65 /* VenueDetailsResponseWrapper.swift in Sources */,
+				4AAD7F381CF4562F00B8DA65 /* VenueGetVenuesByVenueId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +491,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB9F0071BF637D1008B616C /* FSVenuesTests.swift in Sources */,
+				4A3C14CA1CF393FE002DA677 /* FSVenuesTests.swift in Sources */,
+				4A3C14CB1CF393FE002DA677 /* Info.plist in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,12 +507,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4AB9EFFA1BF637D1008B616C /* LaunchScreen.storyboard */ = {
+		4A3C14D71CF39522002DA677 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4AB9EFFB1BF637D1008B616C /* Base */,
+				4A3C14D81CF39522002DA677 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -321,7 +522,7 @@
 		4AB9F0091BF637D1008B616C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -338,8 +539,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				"DYLIB_INSTALL_NAME_BASE[arch=*]" = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -355,6 +562,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -366,7 +574,7 @@
 		4AB9F00A1BF637D1008B616C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -383,8 +591,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DYLIB_INSTALL_NAME_BASE[arch=*]" = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -407,12 +617,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = FSVenues/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = BuildControl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nbartol.FSVenues;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -422,12 +640,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = FSVenues/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = BuildControl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.nbartol.FSVenues;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

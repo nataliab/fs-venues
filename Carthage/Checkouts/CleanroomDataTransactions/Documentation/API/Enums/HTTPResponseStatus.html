@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTTPResponseStatus Enum Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/HTTPResponseStatus" class="dashAnchor"></a>
+    <a title="HTTPResponseStatus Enum Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CleanroomDataTransactions Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/emaloney/CleanroomDataTransactions"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CleanroomDataTransactions Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HTTPResponseStatus Enum Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApiDocOptionalTransaction.html">ApiDocOptionalTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ApiDocTransaction.html">ApiDocTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchImageTransaction.html">FetchImageTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenericDataProcessingTransaction.html">GenericDataProcessingTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JSONOptionalTransaction.html">JSONOptionalTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JSONTransaction.html">JSONTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLTransaction.html">URLTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DataTransactionError.html">DataTransactionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPResponseStatus.html">HTTPResponseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionResult.html">TransactionResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions31httpOptionalStatusCodeValidatorurFzTGSqx_4dataGSqCSo6NSData__T_">httpOptionalStatusCodeValidator(_:data:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions31httpRequiredStatusCodeValidatorurFzTGSqx_4dataGSqCSo6NSData__T_">httpRequiredStatusCodeValidator(_:data:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions24optionalPayloadProcessorurFzGSqPs9AnyObject__GSqx_">optionalPayloadProcessor(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions21platformImageFromDataFzCSo6NSDataCSo7UIImage">platformImageFromData(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions24requiredPayloadProcessorurFzGSqPs9AnyObject__x">requiredPayloadProcessor(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DataTransaction.html">DataTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/QueueProvider.html">QueueProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P25CleanroomDataTransactions23WrappingDataTransaction">WrappingDataTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DefaultQueueProvider.html">DefaultQueueProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HTTPResponseMetadata.html">HTTPResponseMetadata</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions22ApiDocArrayTransaction">ApiDocArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions27ApiDocDictionaryTransaction">ApiDocDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions30ApiDocOptionalArrayTransaction">ApiDocOptionalArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions35ApiDocOptionalDictionaryTransaction">ApiDocOptionalDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions20JSONArrayTransaction">JSONArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions25JSONDictionaryTransaction">JSONDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions28JSONOptionalArrayTransaction">JSONOptionalArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions33JSONOptionalDictionaryTransaction">JSONOptionalDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions17PlatformImageType">PlatformImageType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HTTPResponseStatus</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HTTPResponseStatus</span></code></pre>
+
+                </div>
+              </div>
+            <p>Meaningful values for some of the common HTTP response codes.</p>
+
+<p>Note that not every HTTP code is represented here; those that aren&rsquo;t
+can be stored in the <code>.Other</code> case.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus2OKFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/OK" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus2OKFMS0_S0_">OK</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>200 OK</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">OK</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus7CreatedFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/Created" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus7CreatedFMS0_S0_">Created</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>201 Created</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Created</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus9NoContentFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/NoContent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus9NoContentFMS0_S0_">NoContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>204 No Content</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NoContent</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus10BadRequestFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/BadRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus10BadRequestFMS0_S0_">BadRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>400 Bad Request</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">BadRequest</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus12UnauthorizedFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/Unauthorized" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus12UnauthorizedFMS0_S0_">Unauthorized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>401 Unauthorized</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Unauthorized</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus8NotFoundFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/NotFound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus8NotFoundFMS0_S0_">NotFound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>404 Not Found</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NotFound</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus8ConflictFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/Conflict" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus8ConflictFMS0_S0_">Conflict</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>409 Conflict</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Conflict</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus4GoneFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/Gone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus4GoneFMS0_S0_">Gone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>410 Gone</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Gone</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus19UnprocessableEntityFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/UnprocessableEntity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus19UnprocessableEntityFMS0_S0_">UnprocessableEntity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>422 Unprocessable Entity</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">UnprocessableEntity</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus10BadGatewayFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/BadGateway" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus10BadGatewayFMS0_S0_">BadGateway</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>502 Bad Gateway</code> response code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">BadGateway</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatus5OtherFMS0_FSiS0_"></a>
+                    <a name="//apple_ref/swift/Element/Other" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatus5OtherFMS0_FSiS0_">Other</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents HTTP response codes not covered by the other cases.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Other</span><span class="p">(</span><span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions18HTTPResponseStatus10statusCodeSi"></a>
+                    <a name="//apple_ref/swift/Property/statusCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions18HTTPResponseStatus10statusCodeSi">statusCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The numeric HTTP status code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions18HTTPResponseStatuscFSiS0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions18HTTPResponseStatuscFSiS0_">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes an <code><a href="../Enums/HTTPResponseStatus.html">HTTPResponseStatus</a></code> to the value represented by the given
+<code>Int</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The HTTP status code.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OO25CleanroomDataTransactions18HTTPResponseStatus8Category"></a>
+                    <a name="//apple_ref/swift/Enum/Category" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OO25CleanroomDataTransactions18HTTPResponseStatus8Category">Category</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents the five categories of HTTP response codes.</p>
+
+                        <a href="../Enums/HTTPResponseStatus/Category.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Category</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions18HTTPResponseStatus16responseCategoryOS0_8Category"></a>
+                    <a name="//apple_ref/swift/Property/responseCategory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions18HTTPResponseStatus16responseCategoryOS0_8Category">responseCategory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates the category of the HTTP response.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">responseCategory</span><span class="p">:</span> <span class="kt">Category</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions18HTTPResponseStatus15isInformationalSb"></a>
+                    <a name="//apple_ref/swift/Property/isInformational" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions18HTTPResponseStatus15isInformationalSb">isInformational</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the receiver&rsquo;s <code><a href="../Enums/HTTPResponseStatus.html#/s:vO25CleanroomDataTransactions18HTTPResponseStatus16responseCategoryOS0_8Category">responseCategory</a></code> is 
+ <code>.Informational</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isInformational</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">responseCategory</span> <span class="o">==</span> <span class="o">.</span><span class="kt">Informational</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions18HTTPResponseStatus9isSuccessSb"></a>
+                    <a name="//apple_ref/swift/Property/isSuccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions18HTTPResponseStatus9isSuccessSb">isSuccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the receiver&rsquo;s <code><a href="../Enums/HTTPResponseStatus.html#/s:vO25CleanroomDataTransactions18HTTPResponseStatus16responseCategoryOS0_8Category">responseCategory</a></code> is
+ <code>.Success</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isSuccess</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">responseCategory</span> <span class="o">==</span> <span class="o">.</span><span class="kt">Success</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions18HTTPResponseStatus10isRedirectSb"></a>
+                    <a name="//apple_ref/swift/Property/isRedirect" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions18HTTPResponseStatus10isRedirectSb">isRedirect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the receiver&rsquo;s <code><a href="../Enums/HTTPResponseStatus.html#/s:vO25CleanroomDataTransactions18HTTPResponseStatus16responseCategoryOS0_8Category">responseCategory</a></code> is
+ <code>.Redirection</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isRedirect</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">responseCategory</span> <span class="o">==</span> <span class="o">.</span><span class="kt">Redirection</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions18HTTPResponseStatus13isClientErrorSb"></a>
+                    <a name="//apple_ref/swift/Property/isClientError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions18HTTPResponseStatus13isClientErrorSb">isClientError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the receiver&rsquo;s <code><a href="../Enums/HTTPResponseStatus.html#/s:vO25CleanroomDataTransactions18HTTPResponseStatus16responseCategoryOS0_8Category">responseCategory</a></code> is
+ <code>.ClientError</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isClientError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">responseCategory</span> <span class="o">==</span> <span class="o">.</span><span class="kt">ClientError</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions18HTTPResponseStatus13isServerErrorSb"></a>
+                    <a name="//apple_ref/swift/Property/isServerError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions18HTTPResponseStatus13isServerErrorSb">isServerError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the receiver&rsquo;s <code><a href="../Enums/HTTPResponseStatus.html#/s:vO25CleanroomDataTransactions18HTTPResponseStatus16responseCategoryOS0_8Category">responseCategory</a></code> is
+ <code>.ServerError</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isServerError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">responseCategory</span> <span class="o">==</span> <span class="o">.</span><span class="kt">ServerError</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions18HTTPResponseStatus7isErrorSb"></a>
+                    <a name="//apple_ref/swift/Property/isError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions18HTTPResponseStatus7isErrorSb">isError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the receiver represents a <code>.ClientError</code> or
+ <code>.ServerError</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="n">isClientError</span> <span class="o">||</span> <span class="n">isServerError</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

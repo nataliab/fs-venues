@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DataTransaction Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/DataTransaction" class="dashAnchor"></a>
+    <a title="DataTransaction Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CleanroomDataTransactions Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/emaloney/CleanroomDataTransactions"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CleanroomDataTransactions Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DataTransaction Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApiDocOptionalTransaction.html">ApiDocOptionalTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ApiDocTransaction.html">ApiDocTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchImageTransaction.html">FetchImageTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenericDataProcessingTransaction.html">GenericDataProcessingTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JSONOptionalTransaction.html">JSONOptionalTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JSONTransaction.html">JSONTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLTransaction.html">URLTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DataTransactionError.html">DataTransactionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPResponseStatus.html">HTTPResponseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionResult.html">TransactionResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions31httpOptionalStatusCodeValidatorurFzTGSqx_4dataGSqCSo6NSData__T_">httpOptionalStatusCodeValidator(_:data:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions31httpRequiredStatusCodeValidatorurFzTGSqx_4dataGSqCSo6NSData__T_">httpRequiredStatusCodeValidator(_:data:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions24optionalPayloadProcessorurFzGSqPs9AnyObject__GSqx_">optionalPayloadProcessor(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions21platformImageFromDataFzCSo6NSDataCSo7UIImage">platformImageFromData(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions24requiredPayloadProcessorurFzGSqPs9AnyObject__x">requiredPayloadProcessor(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DataTransaction.html">DataTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/QueueProvider.html">QueueProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P25CleanroomDataTransactions23WrappingDataTransaction">WrappingDataTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DefaultQueueProvider.html">DefaultQueueProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HTTPResponseMetadata.html">HTTPResponseMetadata</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions22ApiDocArrayTransaction">ApiDocArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions27ApiDocDictionaryTransaction">ApiDocDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions30ApiDocOptionalArrayTransaction">ApiDocOptionalArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions35ApiDocOptionalDictionaryTransaction">ApiDocOptionalDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions20JSONArrayTransaction">JSONArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions25JSONDictionaryTransaction">JSONDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions28JSONOptionalArrayTransaction">JSONOptionalArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions33JSONOptionalDictionaryTransaction">JSONOptionalDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions17PlatformImageType">PlatformImageType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DataTransaction</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DataTransaction</span></code></pre>
+
+                </div>
+              </div>
+            <p>An interface for an asynchronously-executing data transaction.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP25CleanroomDataTransactions15DataTransaction18executeTransactionFwx8CallbackT_"></a>
+                    <a name="//apple_ref/swift/Method/executeTransaction(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP25CleanroomDataTransactions15DataTransaction18executeTransactionFwx8CallbackT_">executeTransaction(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Causes the transaction to be executed. The transaction may be performed
+asynchronously. When complete, the <code><a href="../Protocols/DataTransaction.html#/s:P25CleanroomDataTransactions15DataTransaction6Result">Result</a></code> is reported to the <code><a href="../Protocols/DataTransaction.html#/s:P25CleanroomDataTransactions15DataTransaction8Callback">Callback</a></code>
+function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">executeTransaction</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt">Callback</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that will be called upon completion of the transaction.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P25CleanroomDataTransactions15DataTransaction8DataType"></a>
+                    <a name="//apple_ref/swift/Alias/DataType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P25CleanroomDataTransactions15DataTransaction8DataType">DataType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The data type returned by a successful transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">DataType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P25CleanroomDataTransactions15DataTransaction6Result"></a>
+                    <a name="//apple_ref/swift/Alias/Result" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P25CleanroomDataTransactions15DataTransaction6Result">Result</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The result type passed to the transaction completion callback 
+ function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">Result</span> <span class="o">=</span> <span class="kt">TransactionResult</span><span class="o">&lt;</span><span class="kt">DataType</span><span class="p">,</span> <span class="kt">MetadataType</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P25CleanroomDataTransactions15DataTransaction12MetadataType"></a>
+                    <a name="//apple_ref/swift/Alias/MetadataType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P25CleanroomDataTransactions15DataTransaction12MetadataType">MetadataType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The metadata type returned along with a successful transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">MetadataType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P25CleanroomDataTransactions15DataTransaction8Callback"></a>
+                    <a name="//apple_ref/swift/Alias/Callback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P25CleanroomDataTransactions15DataTransaction8Callback">Callback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The signature of the callback function passed to 
+ <code>executeTransaction()</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">typealias</span> <span class="kt">Callback</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Result</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

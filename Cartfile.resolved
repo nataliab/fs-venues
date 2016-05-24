@@ -1,0 +1,5 @@
+github "emaloney/CleanroomConcurrency" "0.4.0"
+github "nataliab/CleanroomDataTransactions" "0.1.5"
+github "nataliab/CleanroomDateTime" "0.6.1"
+github "mxcl/OMGHTTPURLRQ" "3.1.2"
+github "gilt/PromiseKit" "2a345bfea9cfde88db82670f25161d599ba835da"

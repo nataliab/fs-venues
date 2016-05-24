@@ -74,7 +74,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../../default.gpx"
+         identifier = "../../Resources/default 13.00.58.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>

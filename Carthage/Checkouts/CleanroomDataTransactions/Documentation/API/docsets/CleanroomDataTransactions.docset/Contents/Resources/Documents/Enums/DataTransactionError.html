@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DataTransactionError Enum Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/DataTransactionError" class="dashAnchor"></a>
+    <a title="DataTransactionError Enum Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CleanroomDataTransactions Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/emaloney/CleanroomDataTransactions"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CleanroomDataTransactions Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DataTransactionError Enum Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApiDocOptionalTransaction.html">ApiDocOptionalTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ApiDocTransaction.html">ApiDocTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchImageTransaction.html">FetchImageTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenericDataProcessingTransaction.html">GenericDataProcessingTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JSONOptionalTransaction.html">JSONOptionalTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JSONTransaction.html">JSONTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLTransaction.html">URLTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DataTransactionError.html">DataTransactionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPResponseStatus.html">HTTPResponseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionResult.html">TransactionResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions31httpOptionalStatusCodeValidatorurFzTGSqx_4dataGSqCSo6NSData__T_">httpOptionalStatusCodeValidator(_:data:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions31httpRequiredStatusCodeValidatorurFzTGSqx_4dataGSqCSo6NSData__T_">httpRequiredStatusCodeValidator(_:data:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions24optionalPayloadProcessorurFzGSqPs9AnyObject__GSqx_">optionalPayloadProcessor(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions21platformImageFromDataFzCSo6NSDataCSo7UIImage">platformImageFromData(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F25CleanroomDataTransactions24requiredPayloadProcessorurFzGSqPs9AnyObject__x">requiredPayloadProcessor(_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DataTransaction.html">DataTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/QueueProvider.html">QueueProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P25CleanroomDataTransactions23WrappingDataTransaction">WrappingDataTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DefaultQueueProvider.html">DefaultQueueProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HTTPResponseMetadata.html">HTTPResponseMetadata</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions22ApiDocArrayTransaction">ApiDocArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions27ApiDocDictionaryTransaction">ApiDocDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions30ApiDocOptionalArrayTransaction">ApiDocOptionalArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions35ApiDocOptionalDictionaryTransaction">ApiDocOptionalDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions20JSONArrayTransaction">JSONArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions25JSONDictionaryTransaction">JSONDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions28JSONOptionalArrayTransaction">JSONOptionalArrayTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions33JSONOptionalDictionaryTransaction">JSONOptionalDictionaryTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:25CleanroomDataTransactions17PlatformImageType">PlatformImageType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DataTransactionError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">DataTransactionError</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
+
+                </div>
+              </div>
+            <p>An <code>ErrorType</code> that represents various errors that can occur when executing
+<code><a href="../Protocols/DataTransaction.html">DataTransaction</a></code>s.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError12WrappedErrorFMS0_FPs9ErrorType_S0_"></a>
+                    <a name="//apple_ref/swift/Element/WrappedError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError12WrappedErrorFMS0_FPs9ErrorType_S0_">WrappedError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code><a href="../Enums/DataTransactionError.html">DataTransactionError</a></code> that wraps a generic <code>ErrorType</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">WrappedError</span><span class="p">(</span><span class="kt">ErrorType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError12ServiceErrorFMS0_FSSS0_"></a>
+                    <a name="//apple_ref/swift/Element/ServiceError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError12ServiceErrorFMS0_FSSS0_">ServiceError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains an error message returned by a service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">ServiceError</span><span class="p">(</span><span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError15DataFormatErrorFMS0_FSSS0_"></a>
+                    <a name="//apple_ref/swift/Element/DataFormatError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError15DataFormatErrorFMS0_FSSS0_">DataFormatError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An error indicating that data is not in the expected format. Contains
+ a message with additional details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">DataFormatError</span><span class="p">(</span><span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError14NotImplementedFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/NotImplemented" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError14NotImplementedFMS0_S0_">NotImplemented</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The execution path taken by a <code><a href="../Protocols/DataTransaction.html">DataTransaction</a></code> has not been fully
+ implemented.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NotImplemented</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError12NotAvailableFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/NotAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError12NotAvailableFMS0_S0_">NotAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The resource requested by the <code><a href="../Protocols/DataTransaction.html">DataTransaction</a></code> is not available.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NotAvailable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError17BadImplementationFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/BadImplementation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError17BadImplementationFMS0_S0_">BadImplementation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction protocol has been implemented incorrectly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">BadImplementation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError21SessionTaskNotCreatedFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/SessionTaskNotCreated" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError21SessionTaskNotCreatedFMS0_S0_">SessionTaskNotCreated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Failed to create an <code>NSURLSessionTask</code> for the transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">SessionTaskNotCreated</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError12HTTPRequiredFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/HTTPRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError12HTTPRequiredFMS0_S0_">HTTPRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use of the HTTP protocol is required for the given transaction, but
+ it was not used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">HTTPRequired</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError6NoDataFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/NoData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError6NoDataFMS0_S0_">NoData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction returned no data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NoData</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError8CanceledFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/Canceled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError8CanceledFMS0_S0_">Canceled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction was canceled or deallocated before it could be
+ completed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Canceled</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError15AlreadyInFlightFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/AlreadyInFlight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError15AlreadyInFlightFMS0_S0_">AlreadyInFlight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction is already in the process of being executed and
+ has not yet returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">AlreadyInFlight</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError7TimeoutFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/Timeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError7TimeoutFMS0_S0_">Timeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction was aborted because it did not complete in a reasonable
+ time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Timeout</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError7ExpiredFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/Expired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError7ExpiredFMS0_S0_">Expired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The transaction expired before it completed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Expired</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError10InvalidURLFMS0_FSSS0_"></a>
+                    <a name="//apple_ref/swift/Element/InvalidURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError10InvalidURLFMS0_FSSS0_">InvalidURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The given string could not be converted into an <code>NSURL</code> instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">InvalidURL</span><span class="p">(</span><span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError26UnexpectedHTTPResponseCodeFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/UnexpectedHTTPResponseCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError26UnexpectedHTTPResponseCodeFMS0_S0_">UnexpectedHTTPResponseCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An unexpected HTTP response code was returned for the transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">UnexpectedHTTPResponseCode</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError13NotAuthorizedFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/NotAuthorized" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError13NotAuthorizedFMS0_S0_">NotAuthorized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates that the caller is not authorized to perform the given 
+ transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NotAuthorized</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO25CleanroomDataTransactions20DataTransactionError9HTTPErrorFMS0_FTVS_20HTTPResponseMetadataGSqCSo6NSData__S0_"></a>
+                    <a name="//apple_ref/swift/Element/HTTPError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO25CleanroomDataTransactions20DataTransactionError9HTTPErrorFMS0_FTVS_20HTTPResponseMetadataGSqCSo6NSData__S0_">HTTPError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates an HTTP error response was received. Contains the metadata
+ of the response as well as any response data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">HTTPError</span><span class="p">(</span><span class="kt">HTTPResponseMetadata</span><span class="p">,</span> <span class="kt">NSData</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFO25CleanroomDataTransactions20DataTransactionError4wrapFPs9ErrorType_S0_"></a>
+                    <a name="//apple_ref/swift/Method/wrap(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFO25CleanroomDataTransactions20DataTransactionError4wrapFPs9ErrorType_S0_">wrap(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code><a href="../Enums/DataTransactionError.html">DataTransactionError</a></code> representing the given <code>ErrorType</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">wrap</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">)</span>
+        <span class="o">-&gt;</span> <span class="kt">DataTransactionError</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>ErrorType</code> to (possibly) wrap. If <code>error</code> is already a <code>DataTransactionError</code>, it is simply returned as-is. Otherwise, <code>.WrappedError(error)</code> is returned.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vO25CleanroomDataTransactions20DataTransactionError11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vO25CleanroomDataTransactions20DataTransactionError11descriptionSS">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string representation of the <code><a href="../Enums/DataTransactionError.html">DataTransactionError</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

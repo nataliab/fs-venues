@@ -1,0 +1,3 @@
+framework module CleanroomConcurrency {
+    header "CleanroomConcurrency-Swift.h"
+}
