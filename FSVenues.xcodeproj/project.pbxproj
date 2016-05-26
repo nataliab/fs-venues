@@ -45,6 +45,7 @@
 		4AAD7F411CF47A5800B8DA65 /* default 13.00.58.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD7F401CF47A5800B8DA65 /* default 13.00.58.gpx */; };
 		4AAD7F431CF47BF900B8DA65 /* DataTransactionPromiseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F421CF47BF900B8DA65 /* DataTransactionPromiseExtension.swift */; };
 		4AAD7F451CF4962700B8DA65 /* ImageUtlis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD7F441CF4962700B8DA65 /* ImageUtlis.swift */; };
+		4AAD7F601CF7187800B8DA65 /* FSVenues-Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD7F5F1CF7187800B8DA65 /* FSVenues-Demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,11 +127,10 @@
 		4AAD7F401CF47A5800B8DA65 /* default 13.00.58.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default 13.00.58.gpx"; sourceTree = "<group>"; };
 		4AAD7F421CF47BF900B8DA65 /* DataTransactionPromiseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransactionPromiseExtension.swift; sourceTree = "<group>"; };
 		4AAD7F441CF4962700B8DA65 /* ImageUtlis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtlis.swift; sourceTree = "<group>"; };
+		4AAD7F5F1CF7187800B8DA65 /* FSVenues-Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "FSVenues-Demo.gif"; sourceTree = "<group>"; };
 		4AB9EFEE1BF637D1008B616C /* FSVenues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSVenues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB9F0021BF637D1008B616C /* FSVenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSVenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD1120A1C05E28800C90D63 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4AFA6A7A1CF37F5A003FD5AE /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
-		4AFA6A7B1CF37F5A003FD5AE /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,11 +353,10 @@
 		4AFA6A781CF37F5A003FD5AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4AAD7F5F1CF7187800B8DA65 /* FSVenues-Demo.gif */,
 				4AAD7F401CF47A5800B8DA65 /* default 13.00.58.gpx */,
 				4A3C14D61CF39522002DA677 /* Assets.xcassets */,
 				4A3C14D71CF39522002DA677 /* LaunchScreen.storyboard */,
-				4AFA6A7A1CF37F5A003FD5AE /* screen1.png */,
-				4AFA6A7B1CF37F5A003FD5AE /* screen2.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -453,6 +452,7 @@
 				4AAD7F3F1CF4793900B8DA65 /* Info.plist in Resources */,
 				4A3C14F41CF39522002DA677 /* Assets.xcassets in Resources */,
 				4A3C14F51CF39522002DA677 /* LaunchScreen.storyboard in Resources */,
+				4AAD7F601CF7187800B8DA65 /* FSVenues-Demo.gif in Resources */,
 				4AAD7F411CF47A5800B8DA65 /* default 13.00.58.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
